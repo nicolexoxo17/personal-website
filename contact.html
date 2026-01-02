@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        <meta charset="UTF-8">
+        <title>Επικοινωνία</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <menu>
+            <a href="main.html">Αρχική</a>
+            <a href="kyriws.html">Σχετικά με εμένα</a>
+            <a href="asxolies.html">Χόμπι</a>
+            <br>
+            <a href="stoxoi.html">Στόχοι</a>
+            <a href="contact.html">Επικοινωνία</a>
+        </menu>
+        <main>
+            <h1>Επικοινωνία</h1>
+            
+            <div id="form-container">
+                <p>Για αποστολή μηνύματος</p>
+                
+                <div class="form-group">
+                    <label for="name">Όνομα:</label>
+                    <input type="text" id="name" placeholder="Το όνομα σας">
+                    <div id="error-name" class="error">Πρέπει να συμπληρώσετε το πεδίο Όνομα</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="Το email σας">
+                    <div id="error-email" class="error">Πρέπει να συμπληρώσετε το πεδίο Email</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Μήνυμα:</label>
+                    <textarea id="message" placeholder="Γράψτε το μήνυμα σας εδω..."></textarea>
+                    
+                    <div id="error-message-empty" class="error">Το πεδίο μήνυμα είναι υποχρεωτικό</div>
+                    <div id="error-message-limit" class="error">Το μήνυμα δεν πρέπει να ξεπερνά τους 100 χαρακτήρες</div>
+                </div> 
+                <button onclick="forma()">ΑΠΟΣΤΟΛΗ</button>
+            </div><div id="success-message" style="display: none;">Το μήνυμα στάλθηκε επιτυχώς</div>
+            
+        </main>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
